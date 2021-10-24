@@ -1,0 +1,20 @@
+{
+  "develop": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fulit-develop-72100-authRole",
+      "UnauthRoleArn": "arn:aws:iam::289862073853:role/amplify-fulit-develop-72100-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::289862073853:role/amplify-fulit-develop-72100-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-fulit-develop-72100-deployment",
+      "UnauthRoleName": "amplify-fulit-develop-72100-unauthRole",
+      "StackName": "amplify-fulit-develop-72100",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:289862073853:stack/amplify-fulit-develop-72100/58ea3120-3386-11ec-91d9-064c2582fb33",
+      "AmplifyAppId": "dup7dtmoajpse"
+    },
+    "categories": {
+      "auth": {
+        "fulitb6cd8dcf": {}
+      }
+    }
+  }
+}

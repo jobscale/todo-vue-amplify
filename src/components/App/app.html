@@ -1,0 +1,27 @@
+<amplify-authenticator>
+  <amplify-sign-out>
+    <template v-slot:sign-out>
+      <span class="fa fa-user"></span>
+      logout
+    </template>
+  </amplify-sign-out>
+  <div id="app">
+    <div v-if="authState === 'signedin' && user">
+      <div>Hello, {{user.username}}</div>
+    </div>
+    <hr>
+    <h1>Todo App</h1>
+    <form action="#">
+      <input type="text" v-model="name" placeholder="Todo name">
+      <input type="text" v-model="description" placeholder="Todo description">
+      <button type="submit" v-on:click="createTodo">Create Todo</button>
+    </form>
+    <div v-for="item in todos" :key="item.id">
+      <div>
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.description }}</p>
+        <button v-on:click="() => deleteTodo(item.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</amplify-authenticator>

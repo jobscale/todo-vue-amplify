@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "fulit",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authfulitb6cd8dcf",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
