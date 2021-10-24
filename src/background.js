@@ -1,7 +1,7 @@
 import { PubSub } from 'aws-amplify';
 import { AWSIoTProvider } from '@aws-amplify/pubsub';
 import iot from './IoTClient';
-import iot_exports from './iot-exports';
+import { iot_exports } from './iot-exports';
 
 export class Background {
   constructor() {
