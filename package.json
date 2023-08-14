@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "serve dist",
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build && mv docs/CNAME dist && rm -r docs && mv dist docs",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
